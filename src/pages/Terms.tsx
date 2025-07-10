@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 export default function Terms() {
   return (
@@ -127,6 +128,8 @@ export default function Terms() {
           </div>
         </section>
       </main>
+      
+      <Footer />
     </>
   );
 }
