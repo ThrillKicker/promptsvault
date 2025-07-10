@@ -25,8 +25,8 @@ export const FeaturesSection = () => {
         }}>Unlock Your Prompt Potential with PromptsVault.</h2>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => <div key={index} className="text-center p-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[800px] mx-auto">
+          {features.map((feature, index) => <div key={index} className="text-center bg-vault-surface rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 hover:-translate-y-1">
               <div className="mb-6 flex justify-center">
                 <feature.icon className="w-14 h-14 text-vault-primary" />
               </div>
