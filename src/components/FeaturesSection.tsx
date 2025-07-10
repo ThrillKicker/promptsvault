@@ -14,7 +14,7 @@ const features = [
   {
     icon: Share,
     title: "Secure Sharing",
-    description: "Collaborate confidently. Share prompts securely with colleagues or friends, with full control."
+    description: "Soon: Collaborate confidently. Share prompts securely with colleagues or friends, with full control."
   },
   {
     icon: Sparkles,
