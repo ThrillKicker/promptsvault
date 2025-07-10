@@ -15,20 +15,20 @@ export const HeroSection = () => {
       <div className="absolute inset-0 bg-black/85" />
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center text-white">
-        <div className="max-w-5xl mx-auto">
+      <div className="relative z-10 container mx-auto px-16 py-12 text-center text-white">
+        <div className="max-w-4xl mx-auto">
           
-          <h1 className="font-black uppercase tracking-tighter leading-[0.9] mb-10 whitespace-pre-line" style={{ fontSize: 'clamp(4.5rem, 10vw, 8.5rem)', letterSpacing: '-0.07em' }}>
+          <h1 className="font-black uppercase tracking-tighter leading-[0.9] mb-8 whitespace-pre-line" style={{ fontSize: 'clamp(3.5rem, 8vw, 6.5rem)', letterSpacing: '-0.07em' }}>
             Your AI Prompts,{'\n'}Securely Vaulted.
           </h1>
           
-          <p className="text-[#E0E0E0] mb-[4.5rem] leading-relaxed" style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)', marginTop: '2.5rem' }}>
+          <p className="text-[#E0E0E0] mb-12 leading-relaxed" style={{ fontSize: 'clamp(1.4rem, 2.8vw, 2.2rem)', marginTop: '2rem' }}>
             Your creative assets, locked away and always accessible.
           </p>
           
           <Button 
             variant="vault"
-            className="px-[60px] py-6 h-auto hover:bg-black transition-all duration-300 text-lg"
+            className="px-12 py-4 h-auto hover:bg-black transition-all duration-300 text-base"
             asChild
           >
             <a href="https://vault.promptsvault.app" target="_blank" rel="noopener noreferrer">
