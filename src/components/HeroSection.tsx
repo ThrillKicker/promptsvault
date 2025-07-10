@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       {/* YouTube Video Background */}
       <div className="absolute inset-0">
         <iframe
@@ -12,24 +12,23 @@ export const HeroSection = () => {
           allowFullScreen
         />
       </div>
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/50" />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <div className="max-w-4xl mx-auto">
           
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 tracking-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[1.05] mb-6 tracking-tight">
             Your AI Prompts, Securely Vaulted.
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
+          <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-12 leading-relaxed">
             Your creative assets, locked away and always accessible.
           </p>
           
           <Button 
             variant="vault"
-            size="lg"
-            className="text-lg px-8 py-4 h-auto font-semibold"
+            className="text-lg px-10 py-4 h-auto font-semibold rounded-full hover:scale-105 transition-all duration-300"
             asChild
           >
             <a href="https://vault.promptsvault.app" target="_blank" rel="noopener noreferrer">

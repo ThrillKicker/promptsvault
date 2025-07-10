@@ -1,8 +1,8 @@
 export const Footer = () => {
   return (
-    <footer className="py-10 bg-vault-surface-elevated">
+    <footer className="py-16 bg-vault-background">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
           <p className="text-vault-text-muted text-sm mb-4 md:mb-0">
             © 2025 PromptsVault.app. All rights reserved.
           </p>

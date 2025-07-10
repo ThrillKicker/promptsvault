@@ -31,10 +31,10 @@ const pricingPlans = [
 
 export const PricingSection = () => {
   return (
-    <section className="py-20 bg-vault-background">
+    <section className="py-24 bg-vault-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold text-vault-text mb-4 tracking-tight">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-vault-text mb-4 tracking-tight leading-[1.1]">
             Simple, Transparent Pricing.
           </h2>
         </div>
@@ -43,25 +43,25 @@ export const PricingSection = () => {
           {pricingPlans.map((plan, index) => (
             <Card 
               key={index}
-              className={`bg-vault-surface border-white/10 p-10 ${
+              className={`border-0 p-12 rounded-3xl ${
                 plan.highlight 
-                  ? 'ring-2 ring-vault-primary bg-vault-primary text-white' 
-                  : ''
+                  ? 'bg-vault-primary text-white' 
+                  : 'bg-vault-surface'
               }`}
             >
               <CardHeader className="text-center pb-8">
-                <CardTitle className={`text-2xl font-semibold mb-4 ${
+                <CardTitle className={`text-2xl md:text-3xl font-semibold mb-6 ${
                   plan.highlight ? 'text-white' : 'text-vault-text'
                 }`}>
                   {plan.title}
                 </CardTitle>
-                <div className="mb-4">
-                  <span className={`text-4xl md:text-5xl font-bold ${
-                    plan.highlight ? 'text-white' : 'text-vault-primary'
+                <div className="mb-6">
+                  <span className={`text-5xl md:text-6xl font-bold ${
+                    plan.highlight ? 'text-white' : 'text-white'
                   }`}>
                     {plan.price}
                   </span>
-                  <span className={`text-sm ml-2 ${
+                  <span className={`text-base ml-2 ${
                     plan.highlight ? 'text-white/80' : 'text-vault-text-muted'
                   }`}>
                     {plan.period}
@@ -70,13 +70,13 @@ export const PricingSection = () => {
               </CardHeader>
               
               <CardContent className="space-y-4">
-                <ul className="space-y-3 mb-8">
+                <ul className="space-y-4 mb-8">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start gap-3">
                       <Check className={`w-5 h-5 mt-0.5 flex-shrink-0 ${
                         plan.highlight ? 'text-white' : 'text-vault-primary'
                       }`} />
-                      <span className={`${
+                      <span className={`text-base ${
                         plan.highlight ? 'text-white/90' : 'text-vault-text-muted'
                       }`}>
                         {feature}
@@ -86,8 +86,8 @@ export const PricingSection = () => {
                 </ul>
                 
                 <Button 
-                  variant={plan.highlight ? "vault-inverse" : "vault"}
-                  className="w-full py-3"
+                  variant={plan.highlight ? "vault-inverse" : "vault-inverse"}
+                  className="w-full py-4 rounded-full font-semibold hover:scale-105 transition-all duration-300"
                   asChild
                 >
                   <a href="https://vault.promptsvault.app" target="_blank" rel="noopener noreferrer">

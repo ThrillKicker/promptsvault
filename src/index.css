@@ -40,9 +40,9 @@
     /* PromptVault specific tokens */
     --vault-primary: 212 100% 50%; /* #007AFF */
     --vault-primary-hover: 212 100% 40%; /* #0056D4 */
-    --vault-background: 220 14% 11%; /* #1C1C1E */
-    --vault-surface: 240 6% 17%; /* #2C2C2E */
-    --vault-surface-elevated: 0 0% 6%; /* #0A0A0A */
+    --vault-background: 0 0% 0%; /* #000000 */
+    --vault-surface: 0 0% 10%; /* #1A1A1A */
+    --vault-surface-elevated: 0 0% 4%; /* #0A0A0A */
     --vault-text: 0 0% 88%; /* #E0E0E0 */
     --vault-text-muted: 240 5% 56%; /* #8E8E93 */
     
