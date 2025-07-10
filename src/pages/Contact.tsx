@@ -53,7 +53,7 @@ export default function Contact() {
         {/* Contact Form Section */}
         <section className="bg-vault-background py-[80px] pb-[100px]">
           <div className="container mx-auto px-6 max-w-[600px]">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} action="/api/send-contact-email" method="POST" className="space-y-6">
               {/* Name Field */}
               <div className="space-y-2">
                 <Label 
