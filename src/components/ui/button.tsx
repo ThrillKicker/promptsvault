@@ -19,7 +19,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         vault: "bg-vault-text text-white hover:bg-black transition-all duration-300 uppercase tracking-wider font-bold rounded-[5px] border border-vault-text",
-        "vault-inverse": "bg-vault-primary text-vault-text hover:bg-vault-primary-hover transition-all duration-300 uppercase tracking-wider font-bold rounded-[5px] border border-vault-primary",
+        "vault-inverse": "bg-vault-primary text-white hover:bg-vault-primary-hover transition-all duration-300 uppercase tracking-wider font-bold rounded-[5px] border border-vault-primary",
       },
       size: {
         default: "h-10 px-4 py-2",

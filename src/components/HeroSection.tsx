@@ -28,7 +28,7 @@ export const HeroSection = () => {
           
           <Button 
             variant="vault"
-            className="px-[50px] py-5 h-auto hover:bg-black transition-all duration-300"
+            className="px-[60px] py-6 h-auto hover:bg-black transition-all duration-300 text-lg"
             asChild
           >
             <a href="https://vault.promptsvault.app" target="_blank" rel="noopener noreferrer">
