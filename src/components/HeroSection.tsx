@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-16">
+    <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden pt-16">
       {/* YouTube Video Background */}
       <div className="absolute inset-0">
         <iframe
@@ -12,23 +12,23 @@ export const HeroSection = () => {
           allowFullScreen
         />
       </div>
-      <div className="absolute inset-0 bg-black/65" />
+      <div className="absolute inset-0 bg-black/85" />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           
-          <h1 className="font-black uppercase tracking-tighter leading-none mb-7" style={{ fontSize: 'clamp(3.5rem, 8vw, 6.5rem)' }}>
-            Your AI Prompts, Securely Vaulted.
+          <h1 className="font-black uppercase tracking-tighter leading-[0.9] mb-10 whitespace-pre-line" style={{ fontSize: 'clamp(4.5rem, 10vw, 8.5rem)', letterSpacing: '-0.07em' }}>
+            Your AI Prompts,{'\n'}Securely Vaulted.
           </h1>
           
-          <p className="text-white/90 mb-14 leading-relaxed" style={{ fontSize: 'clamp(1.6rem, 3.2vw, 2.5rem)', marginTop: '1.8rem' }}>
+          <p className="text-[#E0E0E0] mb-[4.5rem] leading-relaxed" style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)', marginTop: '2.5rem' }}>
             Your creative assets, locked away and always accessible.
           </p>
           
           <Button 
             variant="vault"
-            className="font-semibold rounded-full px-10 py-4 h-auto hover:scale-[1.03] transition-all duration-300"
+            className="px-[50px] py-5 h-auto hover:bg-black transition-all duration-300"
             asChild
           >
             <a href="https://vault.promptsvault.app" target="_blank" rel="noopener noreferrer">
