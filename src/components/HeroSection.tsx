@@ -1,22 +1,22 @@
 import { Button } from "@/components/ui/button";
-import heroBackground from "@/assets/hero-background.jpg";
 
 export const HeroSection = () => {
   return (
     <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackground})` }}
-      />
-      <div className="absolute inset-0 bg-black/40" />
+      {/* YouTube Video Background */}
+      <div className="absolute inset-0">
+        <iframe
+          src="https://www.youtube.com/embed/FpxRhCPcM-4?autoplay=1&mute=1&loop=1&playlist=FpxRhCPcM-4&controls=0&showinfo=0&rel=0&modestbranding=1"
+          className="absolute top-1/2 left-1/2 w-[177.77777778vh] h-[56.25vw] min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        />
+      </div>
+      <div className="absolute inset-0 bg-black/60" />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <div className="max-w-4xl mx-auto">
-          <p className="text-sm font-medium tracking-wide text-white/90 mb-4">
-            PromptVault.app
-          </p>
           
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 tracking-tight">
             Your AI Prompts,{" "}

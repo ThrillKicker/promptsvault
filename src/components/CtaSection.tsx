@@ -13,7 +13,7 @@ export const CtaSection = () => {
         </h2>
         
         <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-          Join the growing community of AI innovators protecting their valuable prompts with PromptVault.app.
+          Join the growing community of AI innovators protecting their valuable prompts with PromptsVault.app.
         </p>
         
         <Button 
@@ -23,7 +23,7 @@ export const CtaSection = () => {
           asChild
         >
           <a href="https://vault.promptsvault.app" target="_blank" rel="noopener noreferrer">
-            Start Your Vault Today
+            Create My Vault
           </a>
         </Button>
       </div>

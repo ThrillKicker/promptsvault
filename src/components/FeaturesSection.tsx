@@ -43,6 +43,10 @@ export const FeaturesSection = () => {
             <span className="text-transparent bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text">
               Prompt Potential
             </span>
+            {" "}with{" "}
+            <span className="text-transparent bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text">
+              PromptsVault.app
+            </span>
             .
           </h2>
         </div>

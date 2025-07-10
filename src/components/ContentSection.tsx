@@ -7,9 +7,9 @@ export const ContentSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold text-vault-text tracking-tight">
-            Why{" "}
+            Why Choose{" "}
             <span className="text-transparent bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text">
-              PromptVault.app
+              PromptsVault.app
             </span>
             ?
           </h2>
@@ -20,7 +20,7 @@ export const ContentSection = () => {
           <div className="order-2 lg:order-1">
             <img 
               src={securityMockup}
-              alt="PromptVault Security Dashboard"
+              alt="PromptsVault Security Dashboard"
               className="rounded-xl w-full shadow-2xl"
             />
           </div>
@@ -33,7 +33,7 @@ export const ContentSection = () => {
               .
             </h3>
             <p className="text-lg text-vault-text-muted leading-relaxed">
-              PromptVault.app isn't just about saving your prompts; it's about protecting your intellectual property. Our custom-built encryption means your valuable AI creations are safe from prying eyes and accidental loss.
+              PromptsVault.app isn't just about saving your prompts; it's about protecting your intellectual property. Our custom-built encryption means your valuable AI creations are safe from prying eyes and accidental loss.
             </p>
           </div>
         </div>
@@ -49,13 +49,13 @@ export const ContentSection = () => {
               .
             </h3>
             <p className="text-lg text-vault-text-muted leading-relaxed">
-              From advanced tagging to intuitive search, we built PromptVault.app with the AI creator in mind. Spend less time searching and more time innovating.
+              From advanced tagging to intuitive search, we built PromptsVault.app with the AI creator in mind. Spend less time searching and more time innovating.
             </p>
           </div>
           <div>
             <img 
               src={organizationMockup}
-              alt="PromptVault Organization Interface"
+              alt="PromptsVault Organization Interface"
               className="rounded-xl w-full shadow-2xl"
             />
           </div>
