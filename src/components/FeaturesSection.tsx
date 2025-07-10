@@ -1,11 +1,6 @@
-import { Lock, Cloud, Star, Share, GitBranch, Sparkles } from "lucide-react";
+import { Cloud, Star, Share, Sparkles } from "lucide-react";
 
 const features = [
-  {
-    icon: Lock,
-    title: "Unrivaled Security",
-    description: "Your prompts are encrypted end-to-end, protected by bank-grade security protocols. Only you hold the key."
-  },
   {
     icon: Cloud,
     title: "Always Accessible",
@@ -22,11 +17,6 @@ const features = [
     description: "Collaborate confidently. Share prompts securely with colleagues or friends, with full control."
   },
   {
-    icon: GitBranch,
-    title: "Version Control",
-    description: "Track changes and iterate on your prompts. See the evolution of your AI creations."
-  },
-  {
     icon: Sparkles,
     title: "AI-Powered Insights",
     description: "Soon: Get suggestions and refine your prompts with integrated AI analysis and optimization."
@@ -41,7 +31,7 @@ export const FeaturesSection = () => {
         }}>Unlock Your Prompt Potential with PromptsVault.</h2>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-16 max-w-[1200px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 max-w-[1200px] mx-auto">
           {features.map((feature, index) => <div key={index} className="text-center bg-vault-surface rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 hover:-translate-y-1">
               <div className="mb-6 flex justify-center">
                 <feature.icon className="w-14 h-14 text-vault-primary" />
