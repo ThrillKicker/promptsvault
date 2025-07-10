@@ -1,11 +1,6 @@
-import { Shield, Cloud, Star, Share, GitBranch, Sparkles } from "lucide-react";
+import { Cloud, Star, Share, Sparkles } from "lucide-react";
 
 const features = [
-  {
-    icon: Shield,
-    title: "Unrivaled Security",
-    description: "Your prompts are encrypted end-to-end, protected by bank-grade security protocols. Only you hold the key."
-  },
   {
     icon: Cloud,
     title: "Always Accessible",
@@ -20,11 +15,6 @@ const features = [
     icon: Share,
     title: "Secure Sharing",
     description: "Collaborate confidently. Share prompts securely with colleagues or friends, with full control."
-  },
-  {
-    icon: GitBranch,
-    title: "Version Control",
-    description: "Track changes and iterate on your prompts. See the evolution of your AI creations."
   },
   {
     icon: Sparkles,
