@@ -1,6 +1,11 @@
-import { Cloud, Star, Share, Sparkles } from "lucide-react";
+import { Cloud, Star, Share, Sparkles, Shield, GitBranch } from "lucide-react";
 
 const features = [
+  {
+    icon: Shield,
+    title: "Unrivaled Security",
+    description: "Your prompts are encrypted end-to-end, protected by bank-grade security protocols. Only you hold the key."
+  },
   {
     icon: Cloud,
     title: "Always Accessible",
@@ -14,7 +19,12 @@ const features = [
   {
     icon: Share,
     title: "Secure Sharing",
-    description: "Soon: Collaborate confidently. Share prompts securely with colleagues or friends, with full control."
+    description: "Collaborate confidently. Share prompts securely with colleagues or friends, with full control."
+  },
+  {
+    icon: GitBranch,
+    title: "Version Control",
+    description: "Track changes and iterate on your prompts. See the evolution of your AI creations."
   },
   {
     icon: Sparkles,
@@ -25,29 +35,29 @@ const features = [
 
 export const FeaturesSection = () => {
   return (
-    <section id="features" className="py-[140px] bg-vault-background">
+    <section id="features" className="py-[100px] bg-vault-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-[120px] max-w-[1100px] mx-auto">
-          <h2 className="font-black uppercase tracking-tight leading-[0.95] text-vault-text whitespace-pre-line" style={{ fontSize: 'clamp(4rem, 8vw, 7rem)', letterSpacing: '-0.06em' }}>
-            Unlock Your <span className="text-vault-primary">Prompt Potential</span>{'\n'}With PromptsVault.
+        <div className="text-center mb-[80px] max-w-[1200px] mx-auto">
+          <h2 className="font-bold leading-[1.2] text-vault-text" style={{ fontSize: 'clamp(2.5rem, 4.5vw, 4rem)' }}>
+            Unlock Your Prompt Potential with PromptsVault.app.
           </h2>
         </div>
         
-        <div className="grid grid-cols-1 gap-[100px] max-w-[1100px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="text-center group"
+              className="text-center bg-vault-surface rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300"
             >
-              <div className="mb-[40px] flex justify-center">
-                <feature.icon className="w-[90px] h-[90px] text-vault-primary group-hover:scale-110 transition-transform duration-300" />
+              <div className="mb-6 flex justify-center">
+                <feature.icon className="w-14 h-14 text-vault-primary" />
               </div>
               
-              <h3 className="font-black text-vault-text mb-[30px] leading-[1.1]" style={{ fontSize: 'clamp(2.5rem, 4.5vw, 4rem)', letterSpacing: '-0.05em' }}>
+              <h3 className="font-bold text-vault-text mb-4 leading-[1.1]" style={{ fontSize: 'clamp(1.3rem, 2vw, 1.8rem)' }}>
                 {feature.title}
               </h3>
               
-              <p className="text-vault-text-muted leading-[1.6]" style={{ fontSize: 'clamp(1.25rem, 1.8vw, 1.6rem)' }}>
+              <p className="text-vault-text-muted leading-[1.6]" style={{ fontSize: 'clamp(0.95rem, 1.2vw, 1.1rem)' }}>
                 {feature.description}
               </p>
             </div>

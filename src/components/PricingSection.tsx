@@ -9,7 +9,7 @@ const pricingPlans = [
     period: "per month",
     features: [
       "Access to your secure vault",
-      "Unlimited prompt storage",
+      "Unlimited prompt storage", 
       "Cross-device sync",
       "Basic sharing features"
     ],
@@ -31,50 +31,50 @@ const pricingPlans = [
 
 export const PricingSection = () => {
   return (
-    <section id="pricing" className="py-[140px] bg-vault-background">
+    <section id="pricing" className="py-[100px] bg-vault-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-[120px]">
-          <h2 className="font-black uppercase tracking-tight leading-[0.95] text-vault-text" style={{ fontSize: 'clamp(4rem, 8vw, 7rem)', letterSpacing: '-0.06em' }}>
-            Simple, <span className="text-vault-primary">Transparent</span> Pricing.
+        <div className="text-center mb-[80px]">
+          <h2 className="font-bold leading-[1.2] text-vault-text" style={{ fontSize: 'clamp(2.5rem, 4.5vw, 4rem)' }}>
+            Simple, Transparent Pricing.
           </h2>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-[60px] max-w-[1100px] mx-auto">
+        <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
           {pricingPlans.map((plan, index) => (
             <Card 
               key={index}
-              className={`border-0 p-[70px] rounded-[10px] shadow-[0_15px_40px_rgba(0,0,0,0.1)] ${
+              className={`border-0 p-12 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 ${
                 plan.highlight 
-                  ? 'bg-vault-surface-elevated text-white' 
+                  ? 'bg-vault-primary text-white' 
                   : 'bg-vault-surface'
               }`}
             >
               <CardHeader className="text-center pb-8">
-                <CardTitle className={`font-bold uppercase mb-6 ${
+                <CardTitle className={`font-bold mb-6 ${
                   plan.highlight ? 'text-white' : 'text-vault-text'
-                }`} style={{ fontSize: 'clamp(2.2rem, 3.8vw, 3.2rem)' }}>
+                }`} style={{ fontSize: 'clamp(1.5rem, 2.5vw, 2.2rem)' }}>
                   {plan.title}
                 </CardTitle>
                 <div className="mb-6">
                   <span className={`font-bold ${
-                    plan.highlight ? 'text-vault-primary' : 'text-vault-text'
-                  }`} style={{ fontSize: 'clamp(5rem, 9vw, 7.5rem)' }}>
+                    plan.highlight ? 'text-vault-accent' : 'text-vault-primary'
+                  }`} style={{ fontSize: 'clamp(3.5rem, 6vw, 5rem)' }}>
                     {plan.price}
                   </span>
                   <span className={`ml-2 ${
                     plan.highlight ? 'text-white/80' : 'text-vault-text-muted'
-                  }`} style={{ fontSize: 'clamp(1.25rem, 1.6vw, 1.4rem)' }}>
+                  }`} style={{ fontSize: 'clamp(1rem, 1.3vw, 1.2rem)' }}>
                     {plan.period}
                   </span>
                 </div>
               </CardHeader>
               
               <CardContent className="space-y-4">
-                <ul className="space-y-4 mb-8 mt-[40px]">
+                <ul className="space-y-4 mb-8 mt-8">
                   {plan.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start gap-3 py-[15px]">
+                    <li key={featureIndex} className="flex items-start gap-3 py-2">
                       <Check className={`w-5 h-5 mt-0.5 flex-shrink-0 ${
-                        plan.highlight ? 'text-vault-primary' : 'text-vault-primary'
+                        plan.highlight ? 'text-vault-accent' : 'text-vault-accent'
                       }`} />
                       <span className={`text-base ${
                         plan.highlight ? 'text-white/90' : 'text-vault-text-muted'
@@ -86,8 +86,8 @@ export const PricingSection = () => {
                 </ul>
                 
                 <Button 
-                  variant="vault-inverse"
-                  className="w-full py-5 px-[50px] rounded-[5px] font-bold hover:bg-vault-primary-hover transition-all duration-300"
+                  variant="vault"
+                  className="w-full py-4 px-10 rounded-lg font-semibold shadow-md hover:shadow-lg transition-all duration-300"
                   asChild
                 >
                   <a href="https://vault.promptsvault.app" target="_blank" rel="noopener noreferrer">

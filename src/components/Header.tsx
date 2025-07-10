@@ -8,29 +8,16 @@ export const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="text-xl font-bold text-vault-text tracking-tight">
-              PromptsVault
+              PromptsVault.app
             </h1>
           </div>
-          
-          {/* Navigation 
-          
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-vault-text/90 hover:text-vault-text text-sm font-medium transition-colors">
-              Features
-            </a>
-            <a href="#pricing" className="text-vault-text/90 hover:text-vault-text text-sm font-medium transition-colors">
-              Pricing
-            </a>
-          </nav>
-          
-          End Navigation*/}
           
           {/* CTA Button */}
           <div className="flex items-center">
             <Button 
-              variant="vault-inverse" 
+              variant="vault" 
               size="sm"
-              className="rounded-[5px] px-6"
+              className="rounded-lg px-6 shadow-sm hover:shadow-md"
               asChild
             >
               <a href="https://vault.promptsvault.app">

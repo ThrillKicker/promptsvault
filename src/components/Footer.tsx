@@ -1,31 +1,31 @@
 export const Footer = () => {
   return (
-    <footer className="py-[100px] bg-vault-surface-elevated">
+    <footer className="py-[80px] bg-vault-primary">
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center text-center space-y-6">
-          <p className="text-[#B0B0B0]" style={{ fontSize: '1rem' }}>
-            © 2025 PromptsVault. All rights reserved.
+          <p className="text-vault-text-footer" style={{ fontSize: '0.95rem' }}>
+            © 2025 PromptsVault.app. All rights reserved.
           </p>
           
-          <div className="flex space-x-10">
+          <div className="flex space-x-8">
             <a 
               href="/privacy" 
-              className="text-vault-primary hover:text-vault-primary-hover transition-colors" 
-              style={{ fontSize: '1rem' }}
+              className="text-vault-accent hover:text-vault-accent-hover transition-colors" 
+              style={{ fontSize: '0.95rem' }}
             >
               Privacy Policy
             </a>
             <a 
               href="/terms" 
-              className="text-vault-primary hover:text-vault-primary-hover transition-colors"
-              style={{ fontSize: '1rem' }}
+              className="text-vault-accent hover:text-vault-accent-hover transition-colors"
+              style={{ fontSize: '0.95rem' }}
             >
               Terms of Service
             </a>
             <a 
               href="/contact" 
-              className="text-vault-primary hover:text-vault-primary-hover transition-colors"
-              style={{ fontSize: '1rem' }}
+              className="text-vault-accent hover:text-vault-accent-hover transition-colors"
+              style={{ fontSize: '0.95rem' }}
             >
               Contact Us
             </a>

@@ -19,7 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'sf-pro': [
+				'inter': [
+					'Inter',
 					'SF Pro Display',
 					'-apple-system', 
 					'BlinkMacSystemFont',
@@ -31,6 +32,7 @@ export default {
 					'sans-serif'
 				],
 				'sans': [
+					'Inter',
 					'SF Pro Display',
 					'-apple-system', 
 					'BlinkMacSystemFont',
@@ -79,11 +81,15 @@ export default {
 				vault: {
 					primary: 'hsl(var(--vault-primary))',
 					'primary-hover': 'hsl(var(--vault-primary-hover))',
+					accent: 'hsl(var(--vault-accent))',
+					'accent-hover': 'hsl(var(--vault-accent-hover))',
 					background: 'hsl(var(--vault-background))',
+					'secondary-bg': 'hsl(var(--vault-secondary-bg))',
 					surface: 'hsl(var(--vault-surface))',
-					'surface-elevated': 'hsl(var(--vault-surface-elevated))',
 					text: 'hsl(var(--vault-text))',
-					'text-muted': 'hsl(var(--vault-text-muted))'
+					'text-muted': 'hsl(var(--vault-text-muted))',
+					'text-light': 'hsl(var(--vault-text-light))',
+					'text-footer': 'hsl(var(--vault-text-footer))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
