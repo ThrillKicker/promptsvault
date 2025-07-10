@@ -31,7 +31,7 @@ const pricingPlans = [
 
 export const PricingSection = () => {
   return (
-    <section className="py-24 bg-vault-background">
+    <section id="pricing" className="py-24 bg-vault-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-vault-text mb-4 tracking-tight leading-[1.1]">
