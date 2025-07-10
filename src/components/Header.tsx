@@ -12,7 +12,8 @@ export const Header = () => {
             </h1>
           </div>
           
-          {/* Navigation */}
+          {/* Navigation 
+          
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#features" className="text-vault-text/90 hover:text-vault-text text-sm font-medium transition-colors">
               Features
@@ -21,6 +22,8 @@ export const Header = () => {
               Pricing
             </a>
           </nav>
+          
+          End Navigation*/}
           
           {/* CTA Button */}
           <div className="flex items-center">
@@ -31,7 +34,7 @@ export const Header = () => {
               asChild
             >
               <a href="https://vault.promptsvault.app">
-                Get Started
+                Create My Vault
               </a>
             </Button>
           </div>
