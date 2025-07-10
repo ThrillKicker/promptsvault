@@ -25,7 +25,7 @@ export default function Contact() {
       const formData = new FormData(e.currentTarget);
       
       // Simulate AJAX form submission
-      const response = await fetch('/api/send-contact-email', {
+      const response = await fetch('YOUR_WORKER_SUBDOMAIN_URL_HERE', {
         method: 'POST',
         body: formData,
       });
