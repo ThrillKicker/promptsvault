@@ -9,7 +9,7 @@ export const CtaSection = () => {
         </h2>
         
         <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed">
-          Join the growing community of AI innovators protecting their valuable prompts with PromptsVault.app.
+          Join the growing community of AI innovators protecting their valuable prompts with PromptsVault.
         </p>
         
         <Button 

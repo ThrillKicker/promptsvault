@@ -29,7 +29,7 @@ export const FeaturesSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-vault-text mb-4 tracking-tight leading-[1.1]">
-            Unlock Your Prompt Potential with PromptsVault.app.
+            Unlock Your Prompt Potential with PromptsVault.
           </h2>
         </div>
         
