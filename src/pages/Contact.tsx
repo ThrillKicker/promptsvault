@@ -89,6 +89,23 @@ export default function Contact() {
                 />
               </div>
 
+              {/* Subject Field */}
+              <div className="space-y-2">
+                <Label 
+                  htmlFor="subject" 
+                  className="font-bold text-vault-text"
+                >
+                  Subject
+                </Label>
+                <Input
+                  id="subject"
+                  name="subject"
+                  type="text"
+                  placeholder="Subject of your message"
+                  className="border-input focus:border-vault-accent rounded-[5px] px-3 py-3"
+                />
+              </div>
+
               {/* Comment Field */}
               <div className="space-y-2">
                 <Label 
