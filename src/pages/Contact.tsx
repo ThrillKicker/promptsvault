@@ -26,7 +26,7 @@ export default function Contact() {
       const jsonData = Object.fromEntries(formData.entries());
       
       // Submit form data as JSON
-      const response = await fetch('YOUR_WORKER_SUBDOMAIN_URL_HERE', {
+      const response = await fetch('https://promptsvault-contact-form.thrillkicker.workers.dev/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
