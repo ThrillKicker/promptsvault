@@ -24,7 +24,7 @@ export default function NotFound() {
               <p className="text-vault-text-muted leading-[1.6] mb-8" style={{
               fontSize: 'clamp(1rem, 1.3vw, 1.15rem)'
             }}>
-                We couldn't find what you're looking for. Perhaps you've followed a broken link or the page has been moved.
+                You've stumbled upon a locked section of the vault. This page can't be accessed from here.
               </p>
             </div>
 
@@ -45,6 +45,5 @@ export default function NotFound() {
         </section>
       </main>
       
-      <Footer />
     </>;
 }
