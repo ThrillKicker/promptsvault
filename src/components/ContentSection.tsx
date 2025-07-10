@@ -7,11 +7,7 @@ export const ContentSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold text-vault-text tracking-tight">
-            Why Choose{" "}
-            <span className="text-transparent bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text">
-              PromptsVault.app
-            </span>
-            ?
+            Why Choose PromptsVault.app?
           </h2>
         </div>
         
@@ -26,11 +22,7 @@ export const ContentSection = () => {
           </div>
           <div className="order-1 lg:order-2">
             <h3 className="text-3xl md:text-4xl font-bold text-vault-text mb-6">
-              Beyond Simple{" "}
-              <span className="text-transparent bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text">
-                Storage
-              </span>
-              .
+              Beyond Simple Storage.
             </h3>
             <p className="text-lg text-vault-text-muted leading-relaxed">
               PromptsVault.app isn't just about saving your prompts; it's about protecting your intellectual property. Our custom-built encryption means your valuable AI creations are safe from prying eyes and accidental loss.
@@ -42,11 +34,7 @@ export const ContentSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-3xl md:text-4xl font-bold text-vault-text mb-6">
-              Designed for{" "}
-              <span className="text-transparent bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text">
-                Creators
-              </span>
-              .
+              Designed for Creators.
             </h3>
             <p className="text-lg text-vault-text-muted leading-relaxed">
               From advanced tagging to intuitive search, we built PromptsVault.app with the AI creator in mind. Spend less time searching and more time innovating.

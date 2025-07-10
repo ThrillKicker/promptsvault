@@ -19,11 +19,7 @@ export const HeroSection = () => {
         <div className="max-w-4xl mx-auto">
           
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 tracking-tight">
-            Your AI Prompts,{" "}
-            <span className="text-transparent bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text">
-              Securely Vaulted
-            </span>
-            .
+            Your AI Prompts, Securely Vaulted.
           </h1>
           
           <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">

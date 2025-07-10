@@ -39,15 +39,7 @@ export const FeaturesSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold text-vault-text mb-4 tracking-tight">
-            Unlock Your{" "}
-            <span className="text-transparent bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text">
-              Prompt Potential
-            </span>
-            {" "}with{" "}
-            <span className="text-transparent bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text">
-              PromptsVault.app
-            </span>
-            .
+            Unlock Your Prompt Potential with PromptsVault.app.
           </h2>
         </div>
         
