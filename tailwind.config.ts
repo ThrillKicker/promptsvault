@@ -52,6 +52,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				vault: {
+					primary: 'hsl(var(--vault-primary))',
+					'primary-hover': 'hsl(var(--vault-primary-hover))',
+					background: 'hsl(var(--vault-background))',
+					surface: 'hsl(var(--vault-surface))',
+					'surface-elevated': 'hsl(var(--vault-surface-elevated))',
+					text: 'hsl(var(--vault-text))',
+					'text-muted': 'hsl(var(--vault-text-muted))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
