@@ -11,21 +11,6 @@ export const Header = () => {
             PromptsVault
           </Link>
           
-          {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-vault-text-light hover:text-vault-accent transition-colors duration-300">
-              Home
-            </Link>
-            <Link to="/privacy" className="text-vault-text-light hover:text-vault-accent transition-colors duration-300">
-              Privacy Policy
-            </Link>
-            <Link to="/terms" className="text-vault-text-light hover:text-vault-accent transition-colors duration-300">
-              Terms of Service
-            </Link>
-            <Link to="/contact" className="text-vault-text-light hover:text-vault-accent transition-colors duration-300">
-              Contact Us
-            </Link>
-          </nav>
           
           {/* CTA Button */}
           <Button 
