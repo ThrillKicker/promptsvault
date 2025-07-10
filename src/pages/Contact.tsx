@@ -25,8 +25,7 @@ export default function Contact() {
       const formData = new FormData(e.currentTarget);
       
       // Simulate AJAX form submission
-      const response = await fetch('
-promptsvault-contact-form.thrillkicker.workers.dev', {
+      const response = await fetch('https://YOUR_WORKER_SUBDOMAIN_URL_HERE', {
         method: 'POST',
         body: formData,
       });
