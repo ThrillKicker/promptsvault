@@ -5,15 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You - PromptsVault</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; }
-        h1 { color: #1A2F4F; }
-        p { color: #333333; }
-        a { color: #50B8E1; text-decoration: none; }
+        body {
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #F5F7FA; /* Matches secondary_color from your theme */
+            color: #333333; /* Matches text_color from your theme */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #1A2F4F; /* Matches primary_color from your theme */
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: clamp(1rem, 1.5vw, 1.2rem);
+            margin-bottom: 30px;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        a {
+            display: inline-block;
+            background-color: #50B8E1; /* Matches accent_color from your theme */
+            color: #FFFFFF;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 3px 8px rgba(80, 184, 225, 0.3);
+        }
+        a:hover {
+            background-color: #3AA7D0;
+            box-shadow: 0 5px 15px rgba(80, 184, 225, 0.4);
+        }
     </style>
 </head>
 <body>
     <h1>Thank You!</h1>
-    <p>Your message has been received. We'll get back to you soon.</p>
-    <p><a href="/">Go back to the homepage</a></p>
+    <p>Your message has been received. We appreciate you reaching out and will get back to you soon.</p>
+    <a href="/">Go back to the homepage</a>
 </body>
 </html>
