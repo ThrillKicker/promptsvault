@@ -21,13 +21,13 @@ export const Footer = () => {
             >
               Terms of Service
             </Link>
-            <Link 
+            {/*<Link 
               to="/contact" 
               className="text-vault-accent hover:text-vault-accent-hover transition-colors duration-300"
               style={{ fontSize: '0.95rem' }}
             >
               Contact Us
-            </Link>
+            </Link>*/}
           </div>
           
           {/* Copyright */}
