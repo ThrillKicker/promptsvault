@@ -15,37 +15,33 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Hide any existing messages
-    const successMsg = document.getElementById('contact-success-message');
-    const errorMsg = document.getElementById('contact-error-message');
-    if (successMsg) successMsg.classList.add('hidden');
-    if (errorMsg) errorMsg.classList.add('hidden');
-    
     try {
       const formData = new FormData(e.currentTarget);
-      const jsonData = Object.fromEntries(formData.entries());
       
-      // Submit form data as JSON
-      const response = await fetch('https://promptsvault-contact-form.thrillkicker.workers.dev/', {
+      const response = await fetch('/.netlify/functions/send-contact-email', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(jsonData),
+        body: formData,
       });
       
       if (response.ok) {
-        // Show success message
-        if (successMsg) successMsg.classList.remove('hidden');
-        // Reset form
+        toast({
+          title: "Message sent!",
+          description: "Thank you! We'll get back to you soon.",
+        });
         (e.target as HTMLFormElement).reset();
       } else {
-        // Show error message
-        if (errorMsg) errorMsg.classList.remove('hidden');
+        toast({
+          title: "Error",
+          description: "Failed to send message. Please try again.",
+          variant: "destructive",
+        });
       }
     } catch (error) {
-      // Show error message on network failure
-      if (errorMsg) errorMsg.classList.remove('hidden');
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive",
+      });
     }
     
     setIsSubmitting(false);
@@ -77,22 +73,6 @@ export default function Contact() {
         {/* Contact Form Section */}
         <section className="bg-vault-background py-[80px] pb-[100px]">
           <div className="container mx-auto px-6 max-w-[600px]">
-            {/* Success Message */}
-            <div 
-              id="contact-success-message"
-              className="bg-[#D4EDDA] text-[#155724] p-[15px] rounded-[5px] mb-5 hidden"
-            >
-              Thank you! Your message has been sent successfully. We'll be in touch soon.
-            </div>
-
-            {/* Error Message */}
-            <div 
-              id="contact-error-message"
-              className="bg-[#F8D7DA] text-[#721C24] p-[15px] rounded-[5px] mb-5 hidden"
-            >
-              Oops! There was an error sending your message. Please try again later.
-            </div>
-
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name Field */}
               <div className="space-y-2">
