@@ -4,48 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { useToast } from "@/hooks/use-toast";
-import { useState } from "react";
 
 export default function Contact() {
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    try {
-      const formData = new FormData(e.currentTarget);
-      
-      const response = await fetch('/.netlify/functions/send-contact-email', {
-        method: 'POST',
-        body: formData,
-      });
-      
-      if (response.ok) {
-        toast({
-          title: "Message sent!",
-          description: "Thank you! We'll get back to you soon.",
-        });
-        (e.target as HTMLFormElement).reset();
-      } else {
-        toast({
-          title: "Error",
-          description: "Failed to send message. Please try again.",
-          variant: "destructive",
-        });
-      }
-    } catch (error) {
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-        variant: "destructive",
-      });
-    }
-    
-    setIsSubmitting(false);
-  };
 
   return (
     <>
@@ -73,7 +33,7 @@ export default function Contact() {
         {/* Contact Form Section */}
         <section className="bg-vault-background py-[80px] pb-[100px]">
           <div className="container mx-auto px-6 max-w-[600px]">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form method="POST" action="/thank-you" data-netlify="true" className="space-y-6">
               {/* Name Field */}
               <div className="space-y-2">
                 <Label 
@@ -148,10 +108,9 @@ export default function Contact() {
               <div className="pt-4">
                 <Button 
                   type="submit"
-                  disabled={isSubmitting}
-                  className="bg-vault-accent text-white hover:bg-vault-accent-hover rounded-lg px-10 py-4 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50"
+                  className="bg-vault-accent text-white hover:bg-vault-accent-hover rounded-lg px-10 py-4 font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                  Send Message
                 </Button>
               </div>
             </form>
