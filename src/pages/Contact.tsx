@@ -33,7 +33,7 @@ export default function Contact() {
         {/* Contact Form Section */}
         <section className="bg-vault-background py-[80px] pb-[100px]">
           <div className="container mx-auto px-6 max-w-[600px]">
-            <form method="POST" action="/thank-you" data-netlify="true" data-netlify-redirect="/thank-you" className="space-y-6">
+            <form name="contact" method="POST" action="/thank-you" data-netlify="true" data-netlify-redirect="/thank-you" className="space-y-6">
               {/* Name Field */}
               <div className="space-y-2">
                 <Label 
