@@ -364,7 +364,7 @@ const PromptsVaultLanding = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="logo">PromptsVault</div>
             <div className="text-sm text-gray-500">
-              © 2024 PromptsVault. All rights reserved.
+              © 2025 PromptsVault by <a href="https://thrillkicker.co" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700 transition-colors">ThrillKicker</a>. All rights reserved.
             </div>
             <div className="flex gap-6">
               <a href="#" className="text-sm text-gray-500 hover:text-teal-600">Privacy</a>
