@@ -145,7 +145,7 @@ const PromptsVaultLanding = () => {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
             <button className="nav-link">Log In</button>
-            <Button className="btn-primary">Access Vault</Button>
+            <a href="https://vault.promptsvault.app" className="btn-primary">Access Vault</a>
           </div>
 
           {/* Mobile Menu Toggle */}
