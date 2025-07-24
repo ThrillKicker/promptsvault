@@ -174,6 +174,19 @@ const PromptsVaultLanding = () => {
 
       {/* Hero Section */}
       <section className="hero-section">
+        {/* Video Background */}
+        <iframe
+          className="hero-video-background"
+          src="https://www.youtube.com/embed/FpxRhCPcM-4?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=FpxRhCPcM-4&modestbranding=1&iv_load_policy=3&start=0&end=0&disablekb=1&fs=0&cc_load_policy=0&hl=en&color=white&enablejsapi=0"
+          title="Hero Background Video"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen={false}
+        ></iframe>
+        
+        {/* Video Overlay */}
+        <div className="hero-video-overlay"></div>
+        
         <div className="hero-content animate-fade-in-up">
           <Badge className="mb-6 bg-teal-100 text-teal-700 border-teal-200 px-4 py-2">
             🔒 Secure • Store • Prompt
