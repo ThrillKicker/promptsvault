@@ -201,7 +201,7 @@ const PromptsVaultLanding = () => {
           </p>
           
           <div className="hero-buttons">
-            <a href="https://vault.promptsvault.app" className="btn-primary">
+            <a href="https://vault.promptsvault.app/get-access" className="btn-primary">
               {mockData.hero.ctaButton}
               <ArrowRight className="ml-2" size={20} />
             </a>
