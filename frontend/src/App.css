@@ -91,12 +91,12 @@ body {
   color: var(--text-muted);
 }
 
-/* Brand Button Styles - Teal Primary */
+/* Brand Button Styles - Rectangular with Rounded Corners */
 .btn-primary {
   background: var(--accent-teal);
   color: white;
   border: none;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   padding: 1rem 2rem;
   font-family: 'SF Mono', monospace;
   font-size: 0.875rem;
@@ -125,10 +125,10 @@ body {
 }
 
 .btn-secondary {
-  background: transparent;
+  background: white;
   color: var(--text-primary);
   border: 2px solid var(--border-primary);
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   padding: 1rem 2rem;
   font-family: 'SF Mono', monospace;
   font-size: 0.875rem;
