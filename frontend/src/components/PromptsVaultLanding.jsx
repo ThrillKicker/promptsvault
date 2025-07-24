@@ -28,11 +28,6 @@ const mockData = {
   },
   features: [
     {
-      icon: Shield,
-      title: "Bank-Grade Security",
-      description: "Your prompts are encrypted with enterprise-level security. Your intellectual property stays private and protected."
-    },
-    {
       icon: Globe,
       title: "Always Accessible",
       description: "Access your vault from any device, anywhere. Your prompts are synced and ready when inspiration strikes."
@@ -46,11 +41,6 @@ const mockData = {
       icon: Share2,
       title: "Secure Sharing",
       description: "Collaborate confidently. Share prompts securely with colleagues or friends, with full control."
-    },
-    {
-      icon: Sparkles,
-      title: "AI-Powered Insights",
-      description: "Soon: Get suggestions and refine your prompts with integrated AI analysis and optimization."
     },
     {
       icon: Zap,
