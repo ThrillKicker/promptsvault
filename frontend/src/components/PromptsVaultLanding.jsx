@@ -347,7 +347,7 @@ const PromptsVaultLanding = () => {
           </p>
           
           <div className="flex justify-center gap-4 flex-wrap">
-            <a href="https://vault.promptsvault.app" className="btn-primary">
+            <a href="https://vault.promptsvault.app/get-access" className="btn-primary">
               Access Vault
               <ArrowRight className="ml-2" size={20} />
             </a>
