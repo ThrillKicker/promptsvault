@@ -273,7 +273,9 @@ const PromptsVaultLanding = () => {
                   </ul>
                   
                   <Button className={`w-full mt-6 ${plan.popular ? 'btn-primary' : 'btn-secondary'}`}>
-                    Get Started
+                    <a href="https://vault.promptsvault.app" className="w-full text-center">
+                      Get Started
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
