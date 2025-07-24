@@ -188,26 +188,14 @@ const PromptsVaultLanding = () => {
           </p>
           
           <div className="hero-buttons">
-            <Button className="btn-primary">
+            <a href="https://vault.promptsvault.app" className="btn-primary">
               {mockData.hero.ctaButton}
               <ArrowRight className="ml-2" size={20} />
-            </Button>
+            </a>
             <Button className="btn-secondary">
               <Play className="mr-2" size={18} />
               {mockData.hero.learnMore}
             </Button>
-          </div>
-
-          {/* Trusted By Section */}
-          <div className="mt-12">
-            <p className="text-sm text-gray-500 mb-4">Trusted by</p>
-            <div className="flex justify-center items-center gap-8 flex-wrap opacity-60">
-              {mockData.trustedBy.map((company, index) => (
-                <div key={index} className="text-gray-400 font-mono text-sm uppercase tracking-wider">
-                  {company}
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
