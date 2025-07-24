@@ -166,7 +166,7 @@ const PromptsVaultLanding = () => {
               <button onClick={() => scrollToSection('testimonials')} className="block nav-link">Reviews</button>
               <hr className="border-gray-200" />
               <button className="block nav-link">Log In</button>
-              <Button className="btn-primary w-full">Access Vault</Button>
+              <a href="https://vault.promptsvault.app" className="btn-primary w-full">Access Vault</a>
             </nav>
           </div>
         )}
